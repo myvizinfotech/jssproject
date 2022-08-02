@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="dns-prefetch" href="http://fonts.googleapis.com/" />
+    <link rel="dns-prefetch" href="http://s.w.org/" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title=" &raquo; Feed"
+      href="feed/index.html"
+    />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title=" &raquo; Comments Feed"
+      href="comments/feed/index.html"
+    />
+    <script type="text/javascript">
+      window._wpemojiSettings = {
+        baseUrl: "https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/",
+        ext: ".png",
+        svgUrl: "https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/",
+        svgExt: ".svg",
+        source: {
+          concatemoji:
+            "http:\/\/www.jsspolytechnic.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.3.12",
+        },
+      };
+      !(function (e, a, t) {
+        var n,
+          r,
+          o,
+          i = a.createElement("canvas"),
+          p = i.getContext && i.getContext("2d");
+        function s(e, t) {
+          var a = String.fromCharCode;
+          p.clearRect(0, 0, i.width, i.height),
+            p.fillText(a.apply(this, e), 0, 0);
+          e = i.toDataURL();
+          return (
+            p.clearRect(0, 0, i.width, i.height),
+            p.fillText(a.apply(this, t), 0, 0),
+            e === i.toDataURL()
+          );
+        }
+        function c(e) {
+          var t = a.createElement("script");
+          (t.href = e),
+            (t.defer = t.type = "text/javascript"),
+            a.getElementsByTagName("head")[0].appendChild(t);
+        }
+        for (
+          o = Array("flag", "emoji"),
+            t.supports = { everything: !0, everythingExceptFlag: !0 },
+            r = 0;
+          r < o.length;
+          r++
+        )
+          (t.supports[o[r]] = (function (e) {
+            if (!p || !p.fillText) return !1;
+            switch (
+              ((p.textBaseline = "top"), (p.font = "600 32px Arial"), e)
+            ) {
+              case "flag":
+                return s(
+                  [127987, 65039, 8205, 9895, 65039],
+                  [127987, 65039, 8203, 9895, 65039]
+                )
+                  ? !1
+                  : !s(
+                      [55356, 56826, 55356, 56819],
+                      [55356, 56826, 8203, 55356, 56819]
+                    ) &&
+                      !s(
+                        [
+                          55356, 57332, 56128, 56423, 56128, 56418, 56128,
+                          56421, 56128, 56430, 56128, 56423, 56128, 56447,
+                        ],
+                        [
+                          55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418,
+                          8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128,
+                          56423, 8203, 56128, 56447,
+                        ]
+                      );
+              case "emoji":
+                return !s(
+                  [
+                    55357, 56424, 55356, 57342, 8205, 55358, 56605, 8205, 55357,
+                    56424, 55356, 57340,
+                  ],
+                  [
+                    55357, 56424, 55356, 57342, 8203, 55358, 56605, 8203, 55357,
+                    56424, 55356, 57340,
+                  ]
+                );
+            }
+            return !1;
+          })(o[r])),
+            (t.supports.everything = t.supports.everything && t.supports[o[r]]),
+            "flag" !== o[r] &&
+              (t.supports.everythingExceptFlag =
+                t.supports.everythingExceptFlag && t.supports[o[r]]);
+        (t.supports.everythingExceptFlag =
+          t.supports.everythingExceptFlag && !t.supports.flag),
+          (t.DOMReady = !1),
+          (t.readyCallback = function () {
+            t.DOMReady = !0;
+          }),
+          t.supports.everything ||
+            ((n = function () {
+              t.readyCallback();
+            }),
+            a.addEventListener
+              ? (a.addEventListener("DOMContentLoaded", n, !1),
+                e.addEventListener("load", n, !1))
+              : (e.attachEvent("onload", n),
+                a.attachEvent("onreadystatechange", function () {
+                  "complete" === a.readyState && t.readyCallback();
+                })),
+            (n = t.source || {}).concatemoji
+              ? c(n.concatemoji)
+              : n.wpemoji && n.twemoji && (c(n.twemoji), c(n.wpemoji)));
+      })(window, document, window._wpemojiSettings);
+    </script>
+    <link
+    rel="stylesheet"
+    id="pfc-style-css"
+    href="wp-content/plugins/posts-from-category/assets/pfc-style.css?ver=5.3.12"
+    type="text/css"
+    media="all"
+  />
+  <link
+    rel="stylesheet"
+    id="wp-block-library-css"
+    href="wp-includes/css/dist/block-library/style.min.css?ver=5.3.12"
+    type="text/css"
+    media="all"
+  />
+  <link
+    rel="stylesheet"
+    id="wpos-magnific-style-css"
+    href="wp-content/plugins/album-and-image-gallery-plus-lightbox/assets/css/magnific-popup.css?ver=1.5.5"
+    type="text/css"
+    media="all"
+  />
+  <link
+    rel="stylesheet"
+    id="wpos-slick-style-css"
+    href="wp-content/plugins/album-and-image-gallery-plus-lightbox/assets/css/slick.css?ver=1.5.5"
+    type="text/css"
+    media="all"
+  />
+  <link
+    rel="stylesheet"
+    id="aigpl-public-css-css"
+    href="wp-content/plugins/album-and-image-gallery-plus-lightbox/assets/css/aigpl-public.css?ver=1.5.5"
+    type="text/css"
+    media="all"
+  />
+  <link
+    rel="stylesheet"
+    id="font-awesome-css"
+    href="wp-content/themes/hamroclass/inc/centurylib/assets/library/font-awesome/css/font-awesome.min.css?ver=1.0.0"
+    type="text/css"
+    media="all"
+  />
+  <link
+    rel="stylesheet"
+    id="tcy-front-style-css"
+    href="wp-content/themes/hamroclass/inc/centurylib/assets/css/tcy-front-style.min.css?ver=1.0.0"
+    type="text/css"
+    media="all"
+  />
+  <link
+    rel="stylesheet"
+    id="hamroclass-fonts-css"
+    href="https://fonts.googleapis.com/css?family=Roboto%3A400italic%2C700italic%2C300%2C400%2C500%2C600%2C700%7CSignika%3A400italic%2C700italic%2C300%2C400%2C500%2C600%2C700&#038;subset=latin%2Clatin-ext"
+    type="text/css"
+    media="all"
+  />
+  <link
+    rel="stylesheet"
+    id="lightslider-style-css"
+    href="wp-content/themes/hamroclass/assets/vendor/lightslider/css/lightslider.min.css?ver=1.1.6"
+    type="text/css"
+    media="all"
+  />
+  <link
+    rel="stylesheet"
+    id="magnific-popup-style-css"
+    href="wp-content/themes/hamroclass/assets/vendor/magnific-popup/css/magnific-popup.min.css?ver=1.1.0"
+    type="text/css"
+    media="all"
+  />
+  <link
+    rel="stylesheet"
+    id="hamroclass-main-css"
+    href="wp-content/themes/hamroclass/assets/css/hamroclass.min.css?ver=1.0.2"
+    type="text/css"
+    media="all"
+  />
+  <link
+    rel="stylesheet"
+    id="hamroclass-style-css"
+    href="wp-content/themes/hamroclass/style.css?ver=1.0.2"
+    type="text/css"
+    media="all"
+  />
+  <link
+    rel="stylesheet"
+    id="hamroclass-theeventcalendar-css"
+    href="wp-content/themes/hamroclass/assets/css/theeventcalendar.min.css?ver=1.0.2"
+    type="text/css"
+    media="all"
+  />
+  <link
+    rel="stylesheet"
+    id="hamroclass-learnpress-css"
+    href="wp-content/themes/hamroclass/assets/css/learnpress.min.css?ver=1.0.2"
+    type="text/css"
+    media="all"
+  />
+  <script
+    type="text/javascript"
+    href="wp-includes/js/jquery/jquery.js?ver=1.12.4-wp"
+  ></script>
+  <script
+    type="text/javascript"
+    href="wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"
+  ></script>
+  <script
+    type="text/javascript"
+    href="wp-content/plugins/posts-from-category/assets/pfc-custom.js?ver=4.0.1"
+  ></script>
+  <link
+    rel="https://api.w.org/"
+    href="wp-json/"
+  />
+  <link
+    rel="EditURI"
+    type="application/rsd+xml"
+    title="RSD"
+    href="http://www.jsspolytechnic.org/xmlrpc.php?rsd"
+  />
+  <link
+    rel="wlwmanifest"
+    type="application/wlwmanifest+xml"
+    href="http://www.jsspolytechnic.org/wp-includes/wlwmanifest.xml"
+  />
+  <meta name="generator" content="WordPress 5.3.12" />
+  <link rel="canonical" href="http://www.jsspolytechnic.org/" />
+  <link rel="shortlink" href="http://www.jsspolytechnic.org/" />
+  <link
+    rel="alternate"
+    type="application/json+oembed"
+    href="http://www.jsspolytechnic.org/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.jsspolytechnic.org%2F"
+  />
+  <link
+    rel="alternate"
+    type="text/xml+oembed"
+    href="http://www.jsspolytechnic.org/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.jsspolytechnic.org%2F&#038;format=xml"
+  />
+  <link
+    rel="icon"
+    href="http://www.jsspolytechnic.org/wp-content/uploads/2020/01/cropped-loogo-32x32.png"
+    sizes="32x32"
+  />
+  <link
+    rel="icon"
+    href="http://www.jsspolytechnic.org/wp-content/uploads/2020/01/cropped-loogo-192x192.png"
+    sizes="192x192"
+  />
+  <link
+    rel="apple-touch-icon-precomposed"
+    href="http://www.jsspolytechnic.org/wp-content/uploads/2020/01/cropped-loogo-180x180.png"
+  />
+  <link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title=" &raquo; Feed" href="../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title=" &raquo; Comments Feed" href="../comments/feed/index.html" />
+    <style type="text/css">
+      img.wp-smiley,
+      img.emoji {
+        display: inline !important;
+        border: none !important;
+        box-shadow: none !important;
+        height: 1em !important;
+        width: 1em !important;
+        margin: 0 0.07em !important;
+        vertical-align: -0.1em !important;
+        background: none !important;
+        padding: 0 !important;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      id="pfc-style-css"
+      href="wp-content/plugins/posts-from-category/assets/pfc-stylecd2e.css?ver=5.3.12"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="wp-block-library-css"
+      href="wp-includes/css/dist/block-library/style.mincd2e.css?ver=5.3.12"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="wpos-magnific-style-css"
+      href="wp-content/plugins/album-and-image-gallery-plus-lightbox/assets/css/magnific-popup2846.css?ver=1.5.5"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="wpos-slick-style-css"
+      href="wp-content/plugins/album-and-image-gallery-plus-lightbox/assets/css/slick2846.css?ver=1.5.5"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="aigpl-public-css-css"
+      href="wp-content/plugins/album-and-image-gallery-plus-lightbox/assets/css/aigpl-public2846.css?ver=1.5.5"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="font-awesome-css"
+      href="wp-content/themes/hamroclass/inc/centurylib/assets/library/font-awesome/css/font-awesome.min8a54.css?ver=1.0.0"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="tcy-front-style-css"
+      href="wp-content/themes/hamroclass/inc/centurylib/assets/css/tcy-front-style.min8a54.css?ver=1.0.0"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="hamroclass-fonts-css"
+      href="https://fonts.googleapis.com/css?family=Roboto%3A400italic%2C700italic%2C300%2C400%2C500%2C600%2C700%7CSignika%3A400italic%2C700italic%2C300%2C400%2C500%2C600%2C700&amp;subset=latin%2Clatin-ext"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="lightslider-style-css"
+      href="wp-content/themes/hamroclass/assets/vendor/lightslider/css/lightslider.min3ec8.css?ver=1.1.6"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="magnific-popup-style-css"
+      href="wp-content/themes/hamroclass/assets/vendor/magnific-popup/css/magnific-popup.minf488.css?ver=1.1.0"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="hamroclass-main-css"
+      href="wp-content/themes/hamroclass/assets/css/hamroclass.min20b9.css?ver=1.0.2"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="hamroclass-style-css"
+      href="wp-content/themes/hamroclass/style20b9.css?ver=1.0.2"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="hamroclass-theeventcalendar-css"
+      href="wp-content/themes/hamroclass/assets/css/theeventcalendar.min20b9.css?ver=1.0.2"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="hamroclass-learnpress-css"
+      href="wp-content/themes/hamroclass/assets/css/learnpress.min20b9.css?ver=1.0.2"
+      type="text/css"
+      media="all"
+    />
+    <script
+      type="text/javascript"
+      href="wp-includes/js/jquery/jquery4a5f.js?ver=1.12.4-wp"
+    ></script>
+    <script
+      type="text/javascript"
+      href="wp-includes/js/jquery/jquery-migrate.min330a.js?ver=1.4.1"
+    ></script>
+    <script
+      type="text/javascript"
+      href="wp-content/plugins/posts-from-category/assets/pfc-customf39e.js?ver=4.0.1"
+    ></script>
+    <link rel="https://api.w.org/" href="wp-json/index.html" />
+    <link
+      rel="EditURI"
+      type="application/rsd+xml"
+      title="RSD"
+      href="xmlrpc0db0.html?rsd"
+    />
+    <link
+      rel="wlwmanifest"
+      type="application/wlwmanifest+xml"
+      href="wp-includes/wlwmanifest.xml"
+    />
+    <meta name="generator" content="WordPress 5.3.12" />
+    <link rel="canonical" href="index.html" />
+    <link rel="shortlink" href="index.html" />
+    <link
+      rel="alternate"
+      type="application/json+oembed"
+      href="wp-json/oembed/1.0/embed38ba.json?url=http%3A%2F%2Fwww.jsspolytechnic.org%2F"
+    />
+    <link
+      rel="alternate"
+      type="text/xml+oembed"
+      href="wp-json/oembed/1.0/embed4b32?url=http%3A%2F%2Fwww.jsspolytechnic.org%2F&amp;format=xml"
+    />
+    <link
+      rel="icon"
+      href="wp-content/uploads/2020/01/cropped-loogo-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="wp-content/uploads/2020/01/cropped-loogo-192x192.png"
+      sizes="192x192"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="wp-content/uploads/2020/01/cropped-loogo-180x180.png"
+    />
+    <meta
+      name="msapplication-TileImage"
+      content="http://www.jsspolytechnic.org/wp-content/uploads/2020/01/cropped-loogo-270x270.png"
+    />
+    <style type="text/css" id="wp-custom-css">
+      #customize-theme-controls .control-panel-themes {
+        display: none !important;
+      }
+    </style>
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <title>React App</title>
+    <link rel='stylesheet' id='pfc-style-css'  href='./wp-content/plugins/posts-from-category/assets/pfc-stylecd2e.css?ver=5.3.12' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='./wp-includes/css/dist/block-library/style.mincd2e.css?ver=5.3.12' type='text/css' media='all' />
+<link rel='stylesheet' id='wpos-magnific-style-css'  href='./wp-content/plugins/album-and-image-gallery-plus-lightbox/assets/css/magnific-popup2846.css?ver=1.5.5' type='text/css' media='all' />
+<link rel='stylesheet' id='wpos-slick-style-css'  href='./wp-content/plugins/album-and-image-gallery-plus-lightbox/assets/css/slick2846.css?ver=1.5.5' type='text/css' media='all' />
+<link rel='stylesheet' id='aigpl-public-css-css'  href='./wp-content/plugins/album-and-image-gallery-plus-lightbox/assets/css/aigpl-public2846.css?ver=1.5.5' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='./wp-content/themes/hamroclass/inc/centurylib/assets/library/font-awesome/css/font-awesome.min8a54.css?ver=1.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='tcy-front-style-css'  href='./wp-content/themes/hamroclass/inc/centurylib/assets/css/tcy-front-style.min8a54.css?ver=1.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='hamroclass-fonts-css'  href='https://fonts.googleapis.com/css?family=Roboto%3A400italic%2C700italic%2C300%2C400%2C500%2C600%2C700%7CSignika%3A400italic%2C700italic%2C300%2C400%2C500%2C600%2C700&amp;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='lightslider-style-css'  href='./wp-content/themes/hamroclass/assets/vendor/lightslider/css/lightslider.min3ec8.css?ver=1.1.6' type='text/css' media='all' />
+<link rel='stylesheet' id='magnific-popup-style-css'  href='./wp-content/themes/hamroclass/assets/vendor/magnific-popup/css/magnific-popup.minf488.css?ver=1.1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='hamroclass-main-css'  href='./wp-content/themes/hamroclass/assets/css/hamroclass.min20b9.css?ver=1.0.2' type='text/css' media='all' />
+<link rel='stylesheet' id='hamroclass-style-css'  href='./wp-content/themes/hamroclass/style20b9.css?ver=1.0.2' type='text/css' media='all' />
+<link rel='stylesheet' id='hamroclass-theeventcalendar-css'  href='./wp-content/themes/hamroclass/assets/css/theeventcalendar.min20b9.css?ver=1.0.2' type='text/css' media='all' />
+<link rel='stylesheet' id='hamroclass-learnpress-css'  href='./wp-content/themes/hamroclass/assets/css/learnpress.min20b9.css?ver=1.0.2' type='text/css' media='all' />
+<script type='text/javascript' src='./wp-includes/js/jquery/jquery4a5f.js?ver=1.12.4-wp'></script>
+<script type='text/javascript' src='./wp-includes/js/jquery/jquery-migrate.min330a.js?ver=1.4.1'></script>
+<script type='text/javascript' src='./wp-content/plugins/posts-from-category/assets/pfc-customf39e.js?ver=4.0.1'></script>
+<link rel='https://api.w.org/' href='./wp-json/index.html' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="./xmlrpc0db0.html?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="./wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.3.12" />
+<link rel="canonical" href="index.html" />
+<link rel='shortlink' href='./index6cf3.html?p=71' />
+<link rel="alternate" type="application/json+oembed" href="./wp-json/oembed/1.0/embedf612.json?url=http%3A%2F%2Fwww.jsspolytechnic.org%2Fabout-our-jss-mahavidyapeetha%2F" />
+<link rel="alternate" type="text/xml+oembed" href="./wp-json/oembed/1.0/embedcd7d?url=http%3A%2F%2Fwww.jsspolytechnic.org%2Fabout-our-jss-mahavidyapeetha%2F&amp;format=xml" />
+<link rel="icon" href="./wp-content/uploads/2020/01/cropped-loogo-32x32.png" sizes="32x32" />
+<link rel="icon" href="./wp-content/uploads/2020/01/cropped-loogo-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="./wp-content/uploads/2020/01/cropped-loogo-180x180.png" />
+<meta name="msapplication-TileImage" content="http://www.jsspolytechnic.org/wp-content/uploads/2020/01/cropped-loogo-270x270.png" />
+		<style type="text/css" id="wp-custom-css">
+			#customize-theme-controls .control-panel-themes{
+	display:none !important;
+}
+		</style>
+    
+      <link rel='stylesheet' id='pfc-style-css'  href='./wp-content/plugins/posts-from-category/assets/pfc-stylecd2e.css?ver=5.3.12' type='text/css' media='all' />
+      <link rel='stylesheet' id='wp-block-library-css'  href='./wp-includes/css/dist/block-library/style.mincd2e.css?ver=5.3.12' type='text/css' media='all' />
+      <link rel='stylesheet' id='wpos-magnific-style-css'  href='./wp-content/plugins/album-and-image-gallery-plus-lightbox/assets/css/magnific-popup2846.css?ver=1.5.5' type='text/css' media='all' />
+      <link rel='stylesheet' id='wpos-slick-style-css'  href='./wp-content/plugins/album-and-image-gallery-plus-lightbox/assets/css/slick2846.css?ver=1.5.5' type='text/css' media='all' />
+      <link rel='stylesheet' id='aigpl-public-css-css'  href='./wp-content/plugins/album-and-image-gallery-plus-lightbox/assets/css/aigpl-public2846.css?ver=1.5.5' type='text/css' media='all' />
+      <link rel='stylesheet' id='font-awesome-css'  href='./wp-content/themes/hamroclass/inc/centurylib/assets/library/font-awesome/css/font-awesome.min8a54.css?ver=1.0.0' type='text/css' media='all' />
+      <link rel='stylesheet' id='tcy-front-style-css'  href='./wp-content/themes/hamroclass/inc/centurylib/assets/css/tcy-front-style.min8a54.css?ver=1.0.0' type='text/css' media='all' />
+      <link rel='stylesheet' id='hamroclass-fonts-css'  href='https://fonts.googleapis.com/css?family=Roboto%3A400italic%2C700italic%2C300%2C400%2C500%2C600%2C700%7CSignika%3A400italic%2C700italic%2C300%2C400%2C500%2C600%2C700&amp;subset=latin%2Clatin-ext' type='text/css' media='all' />
+      <link rel='stylesheet' id='lightslider-style-css'  href='./wp-content/themes/hamroclass/assets/vendor/lightslider/css/lightslider.min3ec8.css?ver=1.1.6' type='text/css' media='all' />
+      <link rel='stylesheet' id='magnific-popup-style-css'  href='./wp-content/themes/hamroclass/assets/vendor/magnific-popup/css/magnific-popup.minf488.css?ver=1.1.0' type='text/css' media='all' />
+      <link rel='stylesheet' id='hamroclass-main-css'  href='./wp-content/themes/hamroclass/assets/css/hamroclass.min20b9.css?ver=1.0.2' type='text/css' media='all' />
+      <link rel='stylesheet' id='hamroclass-style-css'  href='./wp-content/themes/hamroclass/style20b9.css?ver=1.0.2' type='text/css' media='all' />
+      <link rel='stylesheet' id='hamroclass-theeventcalendar-css'  href='./wp-content/themes/hamroclass/assets/css/theeventcalendar.min20b9.css?ver=1.0.2' type='text/css' media='all' />
+      <link rel='stylesheet' id='hamroclass-learnpress-css'  href='./wp-content/themes/hamroclass/assets/css/learnpress.min20b9.css?ver=1.0.2' type='text/css' media='all' />
+      <script type='text/javascript' src='../wp-includes/js/jquery/jquery4a5f.js?ver=1.12.4-wp'></script>
+      <script type='text/javascript' src='../wp-includes/js/jquery/jquery-migrate.min330a.js?ver=1.4.1'></script>
+      <script type='text/javascript' src='../wp-content/plugins/posts-from-category/assets/pfc-customf39e.js?ver=4.0.1'></script>
+      <link rel='https://api.w.org/' href='./wp-json/index.html' />
+      <link rel="EditURI" type="application/rsd+xml" title="RSD" href="./xmlrpc0db0.html?rsd" />
+      <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="./wp-includes/wlwmanifest.xml" /> 
+      <meta name="generator" content="WordPress 5.3.12" />
+      <link rel="canonical" href="index.html" />
+      <link rel='shortlink' href='./indexb6ad.html?p=98' />
+      <link rel="alternate" type="application/json+oembed" href="./wp-json/oembed/1.0/embed59fa.json?url=http%3A%2F%2Fwww.jsspolytechnic.org%2Fdepartments%2F" />
+      <link rel="alternate" type="text/xml+oembed" href="./wp-json/oembed/1.0/embed72bc?url=http%3A%2F%2Fwww.jsspolytechnic.org%2Fdepartments%2F&amp;format=xml" />
+      <link rel="icon" href="./wp-content/uploads/2020/01/cropped-loogo-32x32.png" sizes="32x32" />
+      <link rel="icon" href="./wp-content/uploads/2020/01/cropped-loogo-192x192.png" sizes="192x192" />
+  </head>
+  <body class="home page-template-default page page-id-5 page-parent wp-custom-logo edm_fullwidth_layout right-sidebar">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script type='text/javascript' href='wp-content/themes/hamroclass/inc/centurylib/assets/js/tcy-front-script.min8a54.js?ver=1.0.0'></script>
+<script type='text/javascript' href='wp-content/plugins/page-links-to/dist/new-tabe485.js?ver=3.3.6'></script>
+<script type='text/javascript' href='wp-content/themes/hamroclass/assets/js/navigation20b9.js?ver=1.0.2'></script>
+<script type='text/javascript' href='wp-content/themes/hamroclass/assets/vendor/sticky/jquery.stickya1fb.js?ver=20150416'></script>
+<script type='text/javascript' href='wp-content/themes/hamroclass/assets/vendor/sticky/sticky-settingd56c.js?ver=20150309'></script>
+<script type='text/javascript' href='wp-content/themes/hamroclass/assets/vendor/cycle2/js/jquery.cycle2.min784e.js?ver=2.1.6'></script>
+<script type='text/javascript' href='wp-content/themes/hamroclass/assets/js/skip-link-focus-fix.min20b9.js?ver=1.0.2'></script>
+<script type='text/javascript' href='wp-content/themes/hamroclass/assets/vendor/lightslider/js/lightslider.min3ec8.js?ver=1.1.6'></script>
+<script type='text/javascript' href='wp-includes/js/jquery/ui/core.mine899.js?ver=1.11.4'></script>
+<script type='text/javascript' href='wp-includes/js/jquery/ui/widget.mine899.js?ver=1.11.4'></script>
+<script type='text/javascript' href='wp-includes/js/jquery/ui/tabs.mine899.js?ver=1.11.4'></script>
+<script type='text/javascript' href='wp-content/themes/hamroclass/assets/vendor/magnific-popup/js/jquery.magnific-popup.minf488.js?ver=1.1.0'></script>
+<script type='text/javascript' href='wp-content/themes/hamroclass/assets/js/main.min20b9.js?ver=1.0.2'></script>
+<script type='text/javascript' href='wp-includes/js/wp-embed.mincd2e.js?ver=5.3.12'></script>
+  </body>
+</html>
